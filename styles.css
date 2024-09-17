@@ -43,7 +43,7 @@ nav ul li a:hover {
     align-items: center;
     height: 100vh;
     text-align: center;
-    background: url('Images/tennis65.jpg') no-repeat center center fixed; /* Image de fond */
+    background: url('tennis65.jpg') no-repeat center center fixed; /* Image de fond */
     background-size: cover;
 }
 
