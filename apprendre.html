@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TenMaster - Apprendre</title>
+    <style>
+        /* Styles généraux pour le corps et le HTML */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('2.jpg'); /* Fond d'écran */
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        /* Style pour le menu de navigation */
+        nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent pour la barre de navigation */
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            color: #FFD700;
+             transition: all 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Légère surbrillance au survol */
+        }
+
+        /* Style pour la section des vidéos */
+        .video-container {
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7); /* Fond transparent */
+            margin: 20px auto;
+            border-radius: 15px;
+            max-width: 1200px;
+        }
+
+        .video-container h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        /* Style pour aligner les vidéos en grille */
+        .videos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .video-item {
+            margin: 15px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .video-item iframe {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px; /* Arrondit les coins des vidéos */
+        }
+
+        .video-item p {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="raquettes.html">Raquettes et Balles</a></li>
+                <li><a href="vetements.html">Vêtements</a></li>
+                <li><a href="apprendre.html">Apprendre</a></li>
+                <li><a href="contact.html">Nous Contacter</a></li>
+                <li><a href="a_propos.html">À propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="video-container">
+        <h1>Apprenez et perfectionnez votre tennis</h1>
+        <div class="videos">
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/EXAMPLE1" frameborder="0" allowfullscreen></iframe>
+                <p>Améliorer votre coup droit</p>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/EXAMPLE2" frameborder="0" allowfullscreen></iframe>
+                <p>Perfectionner votre revers</p>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/EXAMPLE3" frameborder="0" allowfullscreen></iframe>
+                <p>Apprendre le service puissant</p>
+            </div>
+            <!-- Ajoutez d'autres vidéos ici -->
+        </div>
+    </div>
+</body>
+
+</html>
+
+

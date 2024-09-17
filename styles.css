@@ -1,0 +1,492 @@
+/* Styles généraux */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: transparent;
+}
+
+/* Barre de navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent pour la barre de navigation */
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    color: #FFD700;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.8); /* Changement de couleur de fond sur hover */
+    transform: scale(1.05);
+}
+
+/* Page d'accueil : fond transparent avec image */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: url('Images/tennis65.jpg') no-repeat center center fixed; /* Image de fond */
+    background-size: cover;
+}
+
+.home-container h1 {
+    font-size: 4em;
+    margin: 0;
+    padding: 20px;
+    color: #FFD700;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    border-radius: 10px;
+}
+
+.home-container p {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: #FFD700;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Styles pour les autres pages (onglets) */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: transparent; /* Fond transparent */
+    color: white;
+    overflow-y: auto; /* Permet le défilement si le contenu dépasse */
+}
+
+.page-container h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.page-container p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Section pour les raquettes et les vêtements */
+/* Cartes de produits */
+.product-section {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.product-category {
+    margin-bottom: 30px;
+}
+
+.product-category h2 {
+    font-size: 2em;
+    color: #FFD700;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 10px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #FFD700;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-item p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.product-item a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.product-item a:hover {
+    text-decoration: underline;
+}
+
+/* Section "Nous Contacter" */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.contact-container h1 {
+    font-size: 2.5em;
+    color: #FFD700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-container p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+label {
+    font-size: 1.1em;
+    color: #FFD700;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #FFD700;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+button[type="submit"] {
+    padding: 8px 20px;
+    background-color: #FFD700;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    margin-top: 15px;
+    width: 50%;
+}
+
+button[type="submit"]:hover {
+    background-color: #FFC300;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent pour le footer */
+    color: #FFD700;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Styles pour la section des marques */
+.brand-section {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    max-width: 1200px;
+}
+
+.brand-title {
+    font-size: 2em;
+    color: #FFD700; /* Or pour le titre des marques */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.product-card {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-price {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-link {
+    display: inline-block;
+    background-color: #FFD700;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.product-link:hover {
+    background-color: #FFC300;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+/* Section "Nous Contacter" - Nouveau Design */
+.contact-container-new {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #FFD700;
+}
+
+.contact-container-new h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #FFD700;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    font-size: 1.1em;
+    color: #FFD700;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #FFD700;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: #FFC300;
+    outline: none;
+}
+
+.contact-form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #FFC300;
+}
+
+/* Section "À Propos" */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    max-width: 900px; /* Augmentation de la largeur maximale */
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #FFD700;
+    text-align: center;
+}
+
+.about-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #FFD700;
+    text-align: center;
+}
+
+.about-content {
+    font-size: 1em;  /* Taille de la police maintenue */
+    line-height: 1.5;
+    color: white;
+    text-align: center;
+    max-width: 850px; /* Augmentation de la largeur du texte */
+    margin: 0 auto; /* Centre le contenu */
+}
+
+.about-content p {
+    margin-bottom: 15px;
+}
+
+.about-content strong {
+    color: #FFD700;
+}
+
+.about-content em {
+    font-style: italic;
+}
+
+/* Se connecter */
+.login-button-container {
+    position: fixed; /* Fixe la position du bouton par rapport à la fenêtre */
+    top: 20px; /* Distance du bouton par rapport au haut de la fenêtre */
+    right: 20px; /* Distance du bouton par rapport au bord droit de la fenêtre */
+    z-index: 1000; /* Assure que le bouton est au-dessus des autres éléments */
+}
+
+.login-button-container a {
+    text-decoration: none;
+    color: #000;
+    background-color: #FFD700;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.login-button-container a:hover {
+    background-color: #FFA500;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative; /* Pour garantir que l'alignement reste intact */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
